@@ -14,6 +14,7 @@ NodeSchool chapter for Institute of Engineering & Management (IEM) in Kolkata, I
 * Subscribe to our [mailing list](iem-js-developers@googlegroups.com)
 * Install [Node.js](nodejs.org/download)
 * Install [Git](https://git-scm.com/downloads)
+* BYOD (Bring your own device), wifi will be provided
 * Be on Time!
 
 ## Help
