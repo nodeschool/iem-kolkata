@@ -7,7 +7,7 @@ NodeSchool chapter for Institute of Engineering & Management (IEM) in Kolkata, I
 
 ## Upcoming Events
 
-* Inaugural NodeSchool workshop at Management House Seminar Hall 1 on **31st August, 2015 / 9:30 AM**
+* Inaugural [NodeSchool workshop](workshop-001.md) at Management House Seminar Hall 1 on **31st August, 2015 / 9:30 AM**
 
 ## Prerequisites
 
