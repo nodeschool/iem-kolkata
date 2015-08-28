@@ -2,7 +2,7 @@
 NodeSchool chapter for Institute of Engineering & Management (IEM) in Kolkata, India
 
 * Organizers: [@koustuvsinha](https://github.com/koustuvsinha) and [Prof Ee Kian Wong](mailto:eekian@iemcal.com)
-* Mailing List: [iem-js-developers@googlegroups.com](mailto:iem-js-developers@googlegroups.com)
+* Mailing List: [iem-js-developers@googlegroups.com](https://groups.google.com/forum/#!forum/iem-js-developers)
 * IRC: [#iemjsdevs](https://webchat.freenode.net/?channels=iemjsdevs)
 
 ## Upcoming Events
