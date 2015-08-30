@@ -14,11 +14,12 @@ NodeSchool chapter for Institute of Engineering & Management (IEM) in Kolkata, I
 * Subscribe to our [mailing list](https://groups.google.com/forum/#!forum/iem-js-developers)
 * Install [Node.js](nodejs.org/download)
 * Install [Git](https://git-scm.com/downloads)
+* Star and Watch this repo (as we will use Github Issues to communicate too)
 * BYOD (Bring your own device), wifi will be provided
 * Be on Time!
 
 ## Help
-* Have an issue? Create an [issue](https://github.com/nodeschool/iem-kolkata/issues)!
+* Talk to us directly by creating an [issue](https://github.com/nodeschool/iem-kolkata/issues)!
 * Join IRC
 * Ping me on [facebook](https://facebook.com/koustuvsinha)
 
