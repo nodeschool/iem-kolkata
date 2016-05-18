@@ -8,6 +8,7 @@ NodeSchool chapter for Institute of Engineering & Management (IEM) in Kolkata, I
 ## Upcoming Events
 
 * [International Day 2016](https://github.com/nodeschool/iem-kolkata/issues/6) Nodeschool on May 21st, 2016
+* Signup Link : [Ti.to Event](https://ti.to/nodeschool-iem-kolkata/international-day-2016-nodeschool-workshop)
 
 ## Past Events
 
