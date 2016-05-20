@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>NodeSchool @ IEM</title>
+
+		<meta name="description" content="NodeSchool workshop for students of IEM">
+		<meta name="author" content="Koustuv Sinha">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<img src="images/logo.svg" alt="Logo" height="150" width="150">
+					<h2>Nodeschool @ IEM Kolkata</h2>
+					<h3>International Day Workshop on JS &amp; Web Tools</h3>
+					<h4><a href="http://nodeschool.io/iem-kolkata">IEM Kolkata Nodeschool Chapter</a></h4>
+					<p>
+						<small>Hosted by <a href="#">Koustuv Sinha</a> along with <a href="#">Prof Ee Kian Wong</a></small>
+					</p>
+					<p><small>Mentors : <a href="#">Himanshu Kashyap</a></small></p>
+					<p>
+						<small>In association with <a href="http://nodeschool.io">Nodeschool</a></small>
+					</p>
+					<p><small>Institute of Engineering &amp; Management, Kolkata / 21st May, 2016</small>
+				</section>
+
+				<section>
+					<h2>Wifi Setup</h2>
+					<p>
+						Before starting this workshop, please connect to the following wifi :
+					</p>
+          <p>SSID : <a href="#">****</a> / Password : <a
+            href="#">**********</a></p>
+          <p>Proxy IP : ***.***.**.* / Port : ****</p>
+          		<aside class="notes">
+          			Pair programming? If lot of attendees
+          		</aside>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<h2>Workshop agenda</h2>
+					<p>What we are going to do today...</p>
+					<p class="fragment">Session 1 : Review of Basic Javascript &amp; Git</p>
+					<p class="fragment">Lunch 12-1pm</p>
+					<p class="fragment">Session 2 : Advanced JavaScript, Electron, and more ...</p>
+				</section>
+
+				<section>
+					<h3><em>"World's most misunderstood language" - MDN</em></h3>
+					<p>Full Stack Development Language</p>
+					<p class="fragment">JavaScript is no longer a client side language</p>
+					<p class="fragment">Works on server as well with Node.js</p>
+					<p class="fragment">Used to build web servers and services</p>
+					<p class="fragment">Immense applications!</p>
+				</section>
+
+				<section>
+					<h2>Why learn JavaScript at all?</h2>
+					<p>Trend?</p>
+					<p class="fragment">Powerful functional language</p>
+					<p class="fragment">Full Stack Development</p>
+					<p class="fragment">Lots of jobs! (Startups &amp; Big Companies)</p>
+          <p class="fragment">Easy to learn, hard to master!</a>
+				</section>
+
+				<section>
+					<h2>Sample JavaScript code</h2>
+					<pre><code data-trim>
+						"use strict"
+// turns on JS strict mode to catch more errors
+
+//sample function
+function sampleFn() {
+	var prompt = "Hello, " + name + "!";
+	// Inner functions are put in the local scope by default, as if they were
+	// declared with `var`.
+	function inner(){
+	    alert(prompt);
+	}
+	setTimeout(inner, 5000);
+}
+
+sampleFn();
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>What is Node.js?</h2>
+					<p>JavaScript runtime (Chrome V8)</p>
+					<p class="fragment">Can run JavaScript locally</p>
+					<p class="fragment">Can develop server side code</p>
+					<p class="fragment">Can develop desktop applications</p>
+					<p class="fragment">Full blown package manager : <strong>npm</strong></p>
+				</section>
+				<section>
+					<h2>Sample Node.js code</h2>
+					<p>Its just simple JavaScript!</p>
+					<pre><code data-trim>
+						"use strict"
+// turns on JS strict mode to catch more errors
+
+// import other nodejs libraries
+var asm = require('awesome-module')
+var fs = require('fs')
+
+//sample function
+function sampleFn() {
+	var prompt = "Hello, " + name + "!";
+	function inner(){
+	    asm(prompt);
+	    // read from file system
+	    fs.readFileSync('file.txt');
+	}
+	setTimeout(inner, 5000);
+}
+
+sampleFn();
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Best resources to learn <br>(for free)</h2>
+					<p class="fragment"><a href="http://eloquentjavascript.net/">Eloquent JavaScript</a> : Free book online</p>
+					<p class="fragment"><a href="https://bonsaiden.github.io/JavaScript-Garden/">"JavaScript Garden" tutorial and notes</a></p>
+					<p class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">MDN : A re-introduction to JavaScript</a></p>
+					<p class="fragment"><a href="http://javascriptissexy.com/how-to-learn-javascript-properly/">How to Learn JS properly</a></p>
+					<p class="fragment"><a href="https://github.com/mrdavidlaing/javascript-koans">JavaScript Koans</a></p>
+					<p class="fragment"><a href="https://github.com/ericelliott/essential-javascript-links">Essential JavaScript Links</a></p>
+					<br>
+					<p class="fragment">And the list goes on and on ...</p>
+
+				</section>
+				<section>
+					<section>
+						<h2>Installation Instructions!</h2>
+						<p>Check internet connectivity is on.</p>
+						<p>Install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox 5.0</a> from their website, and install <a href="http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html">VirtualBox Extensions</a> and <a href="https://www.vagrantup.com/downloads.html">Vagrant</a></p>
+						<p>Download our pre-packaged box : <a href="">nodeschool-vagrant.box</a></p>
+						<p>Install it via the following: 
+							<pre><code>vagrant box add nodeschool-vagrant nodeschool-vagrant.box</code></pre>
+						</p>
+						<p>Open a new directory and run the box : 
+							<pre><code>vagrant init nodeschool-vagrant</code><code>vagrant up</code></pre>
+						</p>
+						<p>Log in to the newly created Virtual Machine : 
+							<pre><code>vagrant ssh</code></pre>
+						</p>
+						<aside class="notes">Sublime Text 3 Installation...</aside>
+					</section>
+					<section>
+						<h2>Alternative Installation Instructions</h2>
+						<p>Check internet connectivity is on.</p>
+						<p>Install <a href="http://nodejs.org">Node.js</a> from their website, download your respective installation binaries</p>
+						<aside class="notes">Sublime Text 3 Installation...</aside>
+					</section>
+					<section>
+						<p>If internet is not connecting, don't panic! Offline installation is available!</p> 
+						<p>First, point your npm registry to my local machine</p>
+						<p><pre><code>npm set registry http://192.168.x.x:5080</code></pre></p>
+						<p>Now, download all the modules. They are all cached in my system!</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Enough talk, lets code!</h2>
+					<p>Open Terminal (Command Prompt.. sheesh!)</p>
+					<p>Make terminal fullscreen &amp; Type ...</p>
+					<p><pre><code data-trim>npm install -g javascripting</code></pre></p>
+					<p>Run the workshopper module : </p>
+					<p><pre><code data-trim>javascripting</code></pre></p>
+					<aside class="notes">Those who know fair bit of js may try learnyounode</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Nodeschool Workshop Format</h2>
+						<p>For any workshop, after you run the workshop (just type in the name), you will find the following interface : </p>
+						<img src="images/screen1.png" alt="screen1"/>
+					</section>
+					<section>
+						<p>Choose which module you want to attempt by arrow keys, and press enter!</p>
+					</section>
+					<section>
+						<p>You will find a detailed set of description on the terminal. For that, it helps to put your terminal or command prompt in full screen</p>
+						<p>Windows users, if you find it hard to view the instructions in the command prompt, you can also save them in a text file : </p>
+						<p><pre><code data-trim>javascripting print > instructions.txt</code></pre></p>
+					</section>
+					<section>
+						<p>For every challenge, you need to pass the tests. To run the test on your program file, type</p>
+						<p><pre><code data-trim>javascripting run program.js</code></pre></p>
+						<p>To verify and pass your program, run :</p>
+						<p><pre><code data-trim>javascripting verify program.js</code></pre></p>
+						<p>This format is valid for all Nodeschool workshops</p>
+					</section>
+					<section>
+						<p>Complete all challenges to be the Master!</p>
+					</section>
+				</section>
+
+				<section>
+				<section>
+					<h2>Session 1</h2>
+					<p>Review of the following modules : </p>
+					<p><code>javascripting</code> and <code>git-it</code></p>
+					<p>If you have already covered them, feel free to continue to : </p>
+					<p><code>learnyounode</code> &amp; <code>stream-adventure</code></p>
+				</section>
+
+					<section>
+					<h2>Git : version control system</h2>
+					<p>Created by Linus Torvalds (yes,creator of Linux)</p>
+					<p class="fragment">Saves every version of the file(s)</p>
+					<p class="fragment">Facilitates parallel development (in teams)</p>
+					<p class="fragment">Social coding &amp; Collaboration : <a href="http://github.com">Github</a></p>
+					<p class="fragment">Navigate to your past! (oooh!)</p>
+				</section>
+
+				<section>
+					<h2>Resources to learn</h2>
+					<p><a href="http://git-scm.com/book">Pro Git</a></p>
+					<p><a href="https://try.github.io/">Try git online</a></p>
+					<p><a href="http://overapi.com/git/">Git Cheat Sheet</a></p>
+					<p><a href="https://help.github.com/articles/good-resources-for-learning-git-and-github/">Resources to learn</a></p>
+				</section>
+
+				<section>
+					<h2>Again, EOTLC (Enough of talk, Lets code!)</h2>
+					<p>Hope internet is working.. :P</p>
+					<p>Install Git ; Ubuntu users as easy as : <pre><code data-trim>apt-get install git</code></pre></p>
+					<p>Make terminal fullscreen &amp; Type ...</p>
+					<p><pre><code data-trim>npm install -g git-it</code></pre></p>
+					<p>Run the workshopper module : </p>
+					<p><pre><code data-trim>git-it</code></pre></p>
+				</section>
+
+				</section>
+
+				<section>
+					<h2>Happy Workshopping!</h2>
+					<p>Rejoice / Yell after completing every challenge!</p>
+					<p>If you are stuck, no shame, feel free to <a href="#">ask</a>!</p>
+					<p>If you are done, help your peers!</p>
+				</section>
+
+				<section>
+					<h2>Done already?</h2>
+					<p>Have a Break!</p>
+					<p>Break from 12pm to 1pm</p>
+					<p></p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Session 2</h2>
+						<p>Some advanced JS concepts</p>
+						<p>Start working on <code>learnyounode</code> or <code>stream-adventure</code></p>
+					</section>
+					<section>
+						<h2>Alternate session</h2>
+						<p>Lets learn about a crazy new system, Electron!</p>
+						<img src="images/electron-logo.png" height="61" width="226" alt=""/>
+					</section>
+					<section>
+						<h2>Whats that?</h2>
+						<p>Use JavaScript to write Desktop Apps!</p>
+						<p>Same HTML, CSS and JavaScript : packaged into a Desktop app</p>
+						<p>Works in Windows, Mac and Linux</p>
+						<p>Write once, deploy anytime!</p>
+					</section>
+					<section>
+						<p>Created by Github!</p>
+						<p>Used by a host of applications :</p>
+						<p>Atom, Visual Studio Code, N1 Nylas Mail Client, Slack &amp; Gitter standalone apps</p>
+						<p>Read more about Electron in this <a href="https://github.com/sindresorhus/awesome-electron">awesome list</a>!</p>
+					</section>
+					<section>
+						<h2>Lets dissect Electron</h2>
+						<img src="images/electron.png" height="300" width="300"/>
+						<p>NodeJS app structure, full with package.json, html and css files</p>
+						<p>Web pages are rendered in special Chromium (Chrome, yeah!) instances</p>
+					</section>
+					<section>
+						<h2>Lets dive in!</h2>
+						<p>Install electron : </p>
+						<p><pre><code>npm install -g electron-prebuilt</code></pre></p>
+						<p>Now install the Nodeschool workshopper : </p>
+						<p><pre><code>npm install -g elementary-electron</code></pre></p>
+						<p>Now run it!</p>
+						<p><pre><code>elementary-electron</code></pre></p>
+					</section>
+					<section>
+						<h2>More tutorials</h2>
+						<ul>
+							<li><a href="https://medium.com/developers-writing/building-a-desktop-application-with-electron-204203eeb658#.o0l76wasq">Build a sound machine desktop application</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Happy Workshopping!</h2>
+					<p>Dont forget to rejoice / yell after completing every challenge! :D</p>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Congrats!!!</h2>
+						<p>You <strong>ROCK</strong> in JavaScript!</p>
+					</section>
+					<section>
+						<h2>Basics of Node.js</h2>
+						<p class="fragment"><pre><code>npm install -g learnyounode</code></pre></p>
+					</section>
+					<section>
+						<h2>Learn .pipes()</h2>
+						<p class="fragment"><pre><code>npm install -g stream-adventure</code></pre></p>
+					</section>
+					<section>
+						<h2>Learn NPM</h2>
+						<p class="fragment"><pre><code>npm install -g how-to-npm</code></pre></p>
+					</section>
+					<section>
+						<h2>Learn Scopes &amp; Closures</h2>
+						<p class="fragment"><pre><code>npm install -g scope-chains-closures</code></pre></p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Eat. Sleep. Code.</h2>
+					<p>Code and Contribute in Open Source!</p>
+					<p class="fragment">Some tips ...</p>
+					<p class="fragment">Watch Github Trends</p>
+					<p class="fragment">Read code!</p>
+					<p class="fragment">Clone any project you like</p>
+					<p class="fragment">Build it, run it locally and hack it</p>
+					<p class="fragment">Got issues? create issues!</p>
+					<p class="fragment">Code, and send Pull Requests!</p>
+					<p class="fragment">Enhance your profile!</p>
+				</section>
+
+				<section>
+					<h2>Run after jobs! Nah</h2>
+					<h3>Make jobs run after you!! <br><small>well not literally, :P</small></h3>
+					<p>Create projects, be a dev-ninja</p>
+				</section>
+
+				<section>
+					<h2>Know the Community!</h2>
+					<section>
+						<img src="images/max-ogden.jpg" alt="Max Odgen">
+						<p>Max Ogden, JS Guru, Top Node.JS Developer</p>
+						<p><a href="https://github.com/maxogden">https://github.com/maxogden</a></p>
+					</section>
+					<section>
+						<img src="images/376661.png" height="300" width="300" alt="Mathias Buus">
+						<p>Mathias Buus, Top JS Ninja, creator of Nodeschool</p>
+						<p><a href="https://github.com/mafintosh">https://github.com/mafintosh</a></p>
+					</section>
+					<section>
+						<img src="images/paul.jpg" height="300" width="300" alt="Paul Irish">
+						<p>Paul Irish, Lead Developer of Google Chrome, Google</p>
+						<p><a href="https://github.com/paulirish">https://github.com/paulirish</a></p>
+					</section>
+					<section>
+						<img src="images/addy.jpg" height="300" width="300" alt="Addy Osmani">
+						<p>Addy Osmani, Top UI Developer of Google, creator of Yeoman</p>
+						<p><a href="https://github.com/addyosmani">https://github.com/addyosmani</a></p>
+					</section>
+					<section>
+						<img src="images/pete.jpg" height="300" width="300" alt="Pete Hunt">
+						<p>Pete Hunt, JS Developer &amp; Speaker, Facebook</p>
+						<p><a href="https://github.com/petehunt">https://github.com/petehunt</a></p>
+					</section>
+					<section>
+						<img src="images/sindre.jpg" height="300" width="300" alt="Sindre Sorhus">
+						<p>Sindre Sorhus, Top JS Developer &amp; creator of Awesome Lists</p>
+						<p><a href="https://github.com/sindresorhus">https://github.com/sindresorhus</a></p>
+					</section>
+					<section>
+						<img src="images/brian.png" height="300" width="300" alt="Brian Ford">
+						<p>Brian Ford, AngularJS Developer, Google</p>
+						<p><a href="https://github.com/btford">https://github.com/btford</a></p>
+					</section>
+          <section>
+						<img src="images/feross.jpg" height="300" width="300" alt="Feross
+            Aboukhadijeh">
+						<p>Feross Aboukhadijeh, JS Developer &amp; creator of Webtorrent,
+            Feross/Standard</p>
+						<p><a href="https://github.com/feross">https://github.com/feross</a></p>
+					</section>
+					<section>
+						<br>
+						<h3>Indians are catcing up!</h3>
+						<img src="images/hemanth.jpg" height="300" width="300" alt="Hemanth.HM">
+						<p>Hemanth.HM, Full Stack Developer, Cisco, India</p>
+						<p><a href="https://github.com/hemanth">https://github.com/hemanth</a></p>
+					</section>
+          <section>
+            <h2>And many, many more... </h2>
+          </section>
+				</section>
+
+				<section>
+					<h2>And the stalwarts!</h2>
+					<section>
+						<img src="images/brendan.jpg" height="300" width="300" alt="Brendan Eich">
+						<p>Brendan Eich, creator of JavaScript Language!!</p>
+						<p><a href="https://github.com/BrendanEich">https://github.com/BrendanEich</a></p>
+					</section>
+					<section>
+						<img src="images/douglas.jpg" height="300" width="300" alt="Douglas Crockford">
+						<p>Douglas Crockford, co-creator of JavaScript Language!!</p>
+						<p><a href="https://github.com/douglascrockford">https://github.com/douglascrockford</a></p>
+					</section>
+					<section>
+						<img src="images/john.jpg" height="300" width="300" alt="John Resig">
+						<p>John Resig, creator of Jquery Library</p>
+						<p><a href="https://github.com/jeresig">https://github.com/jeresig</a></p>
+					</section>
+				</section>
+
+				<section>
+					<h2>And the LEGENDS!</h2>
+					<section>
+						<img src="images/linus.jpg" height="300" width="300" alt="Linus Torvalds">
+						<p>Linus Torvalds, creator of Linux Kernel &amp; Git _/\_</p>
+						<p><a href="https://github.com/torvalds">https://github.com/torvalds</a></p>
+					</section>
+					<section>
+						<img src="images/rms.jpg" height="300" width="300" alt="Richard Stallman">
+						<p>Richard Stallman, pioneer of Open Source Movement, Creator of GNU, gcc, Emacs _/\_ _/\_</p>
+						<p><a href="https://stallman.org/index.html">https://stallman.org/index.html</a></p>
+					</section>
+				</section>
+				<section>
+					<h2>Thanks!</h2>
+					<p>Be in touch : <a href="https://facebook.com/koustuvsinha">Facebook</a>, <a href="https://github.com/koustuvsinha">Github</a>, <a href="https://in.linkedin.com/in/koustuvsinha">LinkedIn</a></p>
+					<p>Email : <a href="mailto:koustuvsinha@gmail">koustuvsinha@gmail.com</a></p>
+					<p>Join <a href="https://groups.google.com/forum/#!forum/iem-js-developers">IEM JS Developers Group Mailing List</a></p>
+					<p>Or whatever, join our very own irc channel <a href="#">#iemjsdevs</a> and hang out!</p>
+				</section>
+
+				<section>
+					<h2>Credits</h2>
+					<p>Play with more workshops from <a href="http://nodeschool.io/">NodeSchool</a></p>
+					<p>Slides created by <a href="https://github.com/hakimel/reveal.js">reveal.js</a></p>
+					<p>Super thanks to Prof Ee Kian Wong for setting this up!</p>
+					<br>
+					<p class="fragment"><small>Okay.. Thanks to IEM Management to provide wifi! :P</small></p>
+				</section>
+				<section data-background="images/rsz_background.png">
+				</section>
+				<section>
+					<p><a href="https://github.com/nodeschool/iem-kolkata">https://github.com/nodeschool/iem-kolkata</a></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

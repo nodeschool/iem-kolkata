@@ -235,3 +235,6 @@ header .row { z-index: 2; position: relative; }
   font-family: Helvetica, Arial, "sans-serif"
 }
 /* end international day */
+.new-row-footer {
+  max-width: 90%;
+}
